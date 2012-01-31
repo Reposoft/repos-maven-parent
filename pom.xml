@@ -20,6 +20,23 @@
 		</developer>
 	</developers>
 	
+	<repositories>
+		<repository>
+			<id>repos.open.repo</id>
+			<name>Repos Open Repository</name>
+			<url>http://reposserver.sourceforge.net/maven/</url>
+		</repository>
+	</repositories>
+
+	<distributionManagement>
+		<repository>
+			<!-- http://reposserver.sourceforge.net/maven/ -->
+			<id>repos.open.repo</id>
+			<name>Repos Open Repository</name>
+			<url>sftp://web.sourceforge.net/home/project-web/r/re/reposserver/htdocs/maven</url>
+		</repository>
+	</distributionManagement>
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<lgr-version>0.1</lgr-version>
