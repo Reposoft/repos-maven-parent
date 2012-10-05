@@ -48,7 +48,7 @@
 		<logback-version>1.0.6</logback-version>
 		<junit-version>4.10</junit-version>
 		<mockito-version>1.9.5-rc1</mockito-version>
-		<solr-version>4.0-BETA</solr-version>
+		<solr-version>4.0.0-BETA</solr-version>
 	</properties>
 	<dependencies>
 		<!-- *** annotate dependencies *** -->
