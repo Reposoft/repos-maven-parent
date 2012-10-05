@@ -7,7 +7,7 @@
 	<groupId>se.repos</groupId>
 	<artifactId>maven-parent</artifactId>
 	<packaging>pom</packaging>
-	<version>2.2</version>
+	<version>2.3</version>
 	
 	<name>Repos Java components</name>
 	<url>http://www.repos.se/</url>
@@ -39,10 +39,11 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<lgr-version>0.1</lgr-version>
-		<logback-version>1.0.0</logback-version>
+		<lgr-version>0.2</lgr-version>
+		<logback-version>1.0.6</logback-version>
 		<junit-version>4.10</junit-version>
-		<mockito-version>1.9.0</mockito-version>
+		<mockito-version>1.9.5-rc1</mockito-version>
+		<solr-version>4.0-BETA</solr-version>
 	</properties>
 	<dependencies>
 		<!-- *** annotate dependencies *** -->
@@ -80,6 +81,13 @@
 		</dependency>
 	</dependencies>
 	<build>
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-ssh</artifactId>
+				<version>2.2</version>
+			</extension>
+		</extensions>
 		<pluginManagement>
 			<plugins>
 				<plugin>
