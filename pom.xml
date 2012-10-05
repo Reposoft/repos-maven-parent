@@ -11,6 +11,11 @@
 	
 	<name>Repos Java components</name>
 	<url>http://www.repos.se/</url>
+	
+	<organization>
+		<name>Repos Mjukvara AB</name>
+	</organization>
+	<inceptionYear>2004-2012</inceptionYear>
 
 	<developers>
 		<developer>
@@ -187,6 +192,31 @@
 						<phase>install</phase>
 						<goals>
 							<goal>install</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>com.mycila.maven-license-plugin</groupId>
+				<artifactId>maven-license-plugin</artifactId>
+				<version>1.10.b1</version>
+				<configuration>
+					<header>src/license-header.txt</header>
+					<strictCheck>true</strictCheck>
+					<useDefaultExcludes>true</useDefaultExcludes>
+					<excludes>
+                    	<exclude>**/*.txt</exclude>
+                    	<exclude>LICENSE</exclude>
+                	</excludes>
+					<properties>
+						<year>${project.inceptionYear}</year>
+						<owner>${project.organization.name}</owner>
+					</properties>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>check</goal>
 						</goals>
 					</execution>
 				</executions>
