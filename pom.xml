@@ -7,7 +7,7 @@
 	<groupId>se.repos</groupId>
 	<artifactId>maven-parent</artifactId>
 	<packaging>pom</packaging>
-	<version>2.6</version>
+	<version>2.7</version>
 	
 	<name>Repos Java components</name>
 	<url>http://www.repos.se/</url>
@@ -156,8 +156,9 @@
 		<plugins>
 			<plugin>
 				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>2.9</version>
+				<version>2.10.4</version>
 				<configuration>
+					<failOnError>false</failOnError>
 					<tags>
 						<!-- recognize @todo tag in types, constructors and methods, -->
 						<tag>
@@ -222,7 +223,7 @@
 		<plugins>
 			<plugin>
 				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>2.9</version>
+				<version>2.10.4</version>
 			</plugin>
 			<plugin>
 				<artifactId>maven-project-info-reports-plugin</artifactId>
