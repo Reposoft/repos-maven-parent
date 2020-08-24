@@ -195,6 +195,7 @@
 			<plugin>
 				<groupId>com.mycila.maven-license-plugin</groupId>
 				<artifactId>maven-license-plugin</artifactId>
+				<!-- TODO: Upgrade to 4.0.rc2 or later. Changes format to /* */ instead of /** */. -->
 				<version>1.10.b1</version>
 				<configuration>
 					<header>src/license-header.txt</header>
