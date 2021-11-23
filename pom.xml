@@ -7,7 +7,7 @@
 	<groupId>se.repos</groupId>
 	<artifactId>maven-parent</artifactId>
 	<packaging>pom</packaging>
-	<version>11.0.0</version>
+	<version>11.0.1</version>
 	
 	<name>Repos Java components</name>
 	<url>http://www.repos.se/</url>
@@ -220,6 +220,19 @@
 					<execution>
 						<goals>
 							<goal>check</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.jboss.jandex</groupId>
+				<artifactId>jandex-maven-plugin</artifactId>
+				<version>1.2.1</version>
+				<executions>
+					<execution>
+						<id>make-index</id>
+						<goals>
+							<goal>jandex</goal>
 						</goals>
 					</execution>
 				</executions>
